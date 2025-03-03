@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Directorio Telefónico</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+
+  <div class="container mt-4">
+    <main>
+      <img src="LOGOSOLOARRIBA.png" alt="Banner" style="width:850px; height:150px; margin-bottom: 1em;">
+      <div id="directory">
+      </div>
+  </main>
+    <h1> Departamento del Deporte (Alma Obrera)</h1>
+     
+
+    <div class="mb-3">
+      <input type="text" id="searchInput" class="form-control" placeholder="Buscar...">
+    </div>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Cargo</th>
+          <th>Área</th>
+          <th>Ext.</th>
+          <th>Teléfono</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+
+    <div id="paginationContainer">
+      <button class="btn btn-primary" id="prevPage">Anterior</button>
+      <button class="btn btn-primary" id="nextPage">Siguiente</button>
+      <span id="pageInfo"></span>
+    </div>
+
+    <button class="btn btn-success" id="exportButton">Exportar a Excel</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
